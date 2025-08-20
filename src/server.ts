@@ -1,16 +1,15 @@
 import { Hono } from 'hono'
+const app = new Hono()
 
-  const app = new Hono()
-
-  app.get('/', (c) => {
-    return c.text('Hello Hono!')
+app.get('/', (c) => {
+return c.text('Hello Hono!')
   })
 
-  app.get('/api/hello', (c) => {
-    return c.json({ message: 'Hello from Hono server!' })
+app.get('/api/hello', (c) => {
+ return c.json({ message: 'Hello from Hono server!' })
   })
 
-  app.post('/api/echo', async (c) => {
+app.post('/api/echo', async (c) => {
     const body = await c.req.json()
     return c.json({ received: body })
   })
