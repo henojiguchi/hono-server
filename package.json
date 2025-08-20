@@ -1,0 +1,7 @@
+ {
+    "scripts": {
+      "dev": "bun run --hot src/server.ts",
+      "start": "bun run src/server.ts",
+      "client": "bun run src/client.ts"
+    }
+  }
