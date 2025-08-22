@@ -1,0 +1,6 @@
+name = "hono-bot"
+main = "src/server.ts"
+compatibility_date = "2024-03-18"
+
+[env.production]
+name = "hono-bot"
